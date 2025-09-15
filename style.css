@@ -1,0 +1,118 @@
+﻿@font-face {
+    font-family: 'Inkfree';
+    src: local('Inkfree'), url(/fonts/inkFree.ttf) format('truetype');
+}
+
+* {
+    font-family: 'Inkfree';
+    color: rgb(157,131,206);
+}
+/*Texture for the background*/
+body {
+   background: left 5% / 15% 60% repeat url("assets/pattern.png");
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.canvas-wrapper {
+    border-radius: 7px 7px 0px 0px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 20px 0px;
+    padding: 10px; 
+    background-color: rgb(68,66,64);
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#canvas {
+    border: none;
+    background-color: #ffffff;
+}
+/*Container for the second row */
+.flex-cont2 {
+    display: flex;
+    flex-wrap: nowrap;
+    /*background-color: rgb(68, 66, 64);*/
+    width: 900px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.flex-cont2 > div {
+    /*background-color: #f1f1f1;*/
+    width: 300px;
+    margin: 10px;
+}
+
+.color-picker {
+    display: flex;
+    justify-content: center; /*horizontal al*/
+    align-items: center; /*vertical al*/
+    gap: 30px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    background:rgb(157,131,206);
+}
+
+.slider::-webkit-slider-thumb {
+     -webkit-appearance: none;
+     appearance: none;
+     width: 25px;
+     height: 25px;
+     background: rgb(100,80,138);
+     cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    background-color: rgb(100,80,138);
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border:none;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+.title:hover {
+    color: rgb(237, 151, 71);
+    cursor:default;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 30px;
+}
+
+div button {
+    font-size: 18px;
+}
+
+.clear, .erase {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.clear:hover {
+    color:rgb(237,151,71);
+}
+
+.erase:hover{
+    color:rgb(108, 225, 178);
+}

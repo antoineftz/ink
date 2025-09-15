@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>InkLAN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+ <body>
+
+     <div class="flex-container">
+
+         <div class="canvas-wrapper">
+             <canvas id="canvas" width="900" height="600"></canvas>
+         </div>
+
+         <div class="flex-cont2">
+             <div class="color-picker">
+                 <input type="color" id="foreground" value="#9d83ce" />
+                 <input type="range" min="2" max="50" value="10" class="slider"/>
+             </div>
+
+             <div class="title">InkLAN</div>
+
+             <div class="buttons">
+                 <button class="clear">clear</button>
+                 <button class="erase">eraser</button>
+             </div>
+
+
+         </div>
+
+     </div>
+
+
+    <script src="main.js"></script>
+ </body>
+
+</html>
